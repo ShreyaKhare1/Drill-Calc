@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Displacement</title>
+  <style>
+    body{
+      background-color: goldenrod;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+      font-size: 50px;
+      color: aliceblue;
+      margin-bottom: 0px;
+      
+      width: 500px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+      margin: 10px;
+      text-decoration: none;
+      
+    }
+    hr{
+      margin-left: 0px;
+      width:200px;
+    }
+    
+    a:hover{
+      background-color: #ddd;
+  color: black;
+    }
+    .BasicComputation{
+      background-color: grey;
+      width: 1000px;
+      margin-right: 0px;
+      float: right;
+      margin-top: 0px;
+      border-radius: 10px;
+      border-color: rgb(177, 191, 99);
+      color:black;
+      
+    }
+    
+    .side-menu{
+      display: inline;
+      
+    }
+    .s{
+      display:block;
+    }
+    a:active{
+      color: goldenrod;
+      background-color:rgb(177, 191, 99) ;
+    }
+    .calculation{
+      float: right;
+    }
+    input{
+       border: none;
+ padding: 1rem;
+ width: 100px;
+ background: #e8e8e8;
+ 
+ transition: 0.3s;
+    }
+    input:focus {
+ outline-color: #e8e8e8;
+ background: #e8e8e8;
+ box-shadow: inset 20px 20px 60px #c5c5c5,
+		inset -20px -20px 60px #ffffff;
+ transition: 0.3s;
+}
+    img{
+      border-radius: 20px;
+      border-style: groove;
+      
+    }
+   img:hover{
+    transform: scale(1,2);
+   }
+   .button {
+  --font-color: #323232;
+  --bg-color: #fff;
+  --main-color: #323232;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+  
+  float: right;
+}
+
+.button:active {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+}
+#active{
+  background-color: aquamarine;
+  border-radius: 20px;
+  width: 200px;
+  color: black;
+}
+.container{
+  background-image: url("machine.PNG");
+  background-size: contain;
+  color: #fff;
+}
+p{
+  width: 100px;
+  display: inline-block;
+}
+a{
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>DrillCalc</h1>
+    <a href="index.html">Home</a>
+    <a>Help</a>
+    <a>History</a>
+  </div>
+  <hr>
+  </div>
+  <div class="BasicComputation">
+     <h1>Drilling Fluids</h1>
+    <h2>Dilution</h2></div>
+ <div class="side-menu">
+  
+  <a class="s" id="active">Dilution</a>
+  <br>
+  <br><br><br><br><br><br><br>
+ </div>
+ 
+ <button class="button" id="submit">
+  Let`s go →
+</button>
+<button class="button" id="clear">
+  Clear
+</button>
+ <div class="calculation">
+  
+ <p> Initial Mud Weight </p>  <input type="number" class="v1"><p> ppg</p> 
+ <p>Desired Mud Weight</p>  <input type="number" class="v2"><p> ppg</p>
+ <p>Volume of Mud</p>  <input type="number" class="v3"><p>bbl </p>
+ 
+ <h2 id="pop"></h2>
+ <h2 id="dpop"></h2>
+ 
+ 
+
+</div>
+<script>
+document.querySelector("#submit").addEventListener("click", function() {
+  const MW1=document.querySelector('.v1').value;
+  const MW2=document.querySelector('.v2').value;
+  const V=document.querySelector('.v3').value;
+  
+let Vw = V *(MW1 - MW2)/(MW2 - 8.33);
+let Vd = V *(MW1 - MW2)/(MW2 - 7);
+
+  document.querySelector('#pop').textContent="volume of water "+Vw .toFixed(2)+" bbl";
+  document.querySelector('#dpop').textContent="volume of diesel "+Vd .toFixed(2)+" bbl";
+  
+})
+document.querySelector("#clear").addEventListener("click", function() {
+  document.querySelector('#pop').textContent='';
+  document.querySelector('#dpop').textContent='';
+  
+  })
+</script>
+</body>
+</html>

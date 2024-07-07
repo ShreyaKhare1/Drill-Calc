@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help</title>
+  <link rel="stylesheet"
+  href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous">
+  <style>
+    h2{
+      color:blueviolet;
+    }
+    body{
+      background-image: linear-gradient(to right,rgb(12, 238, 246),rgba(100, 100, 100, 0));
+      
+    }
+  </style>
+</head>
+<body>
+  <h2>Introduction</h2>
+  <p>DrillCalc is a simple tool for rig professionals to compute their frequently used complex engineering calculations in a lucid and easy manner. It is a user friendly application with simple presentation. The DrillCalc results are needed daily by several rig personnel like drilling supervisors, tool pushers, drillers, roughnecks, roustabouts, mud engineers and mud loggers. These computations are also useful to drilling and petroleum engineering students. The DrillCalc GUI has input boxes to enter values and output fields to display results. Wherever needed, figures are drawn with labels for easy understanding. Some of these calculations can be done manually with a scientific calculator. However on a rig, operations are stressful due to which there are chances of errors in manual calculation. DrillCalc's user friendly web pages produce results with very little chance of computation error. Manual calculation consumes time which is sometimes very scarce in operations like well control where quick decisions need to be taken in real time. Therefore, DrillCalc helps rig people perform their task efficiently and safely. 
+    All computations in DrillCalc are divided into six menu tabs seen on home page. The six tabs on DrillCalc home page are:
+   </p>
+   <ol>
+    <li>Basic Computation</li>
+    <li>Drilling Engineering</li>
+    <li>Bit Analysis</li>
+    <li>Drilling Fluids</li>
+    <li>Hydraulics</li>
+    <li>Pressure and well control</li>
+    <li>Tally,Sheets and Conversions.</li>
+   </ol>
+   <h2>1.	Basic Computation</h2>
+   <p>
+    It is the first tab of RigSoft. It has twelve menu items, each performing several basic computations.  It has computations for pump out put, pipe capacity, displacement and weight, tank volumes, lag time and lag stroke.
+    </p>
+    <h3>Pump out Put</h3>
+    <p>Mud pumps are primarily used to pump drilling fluids into circulation system. A rig has several pumps. These pumps can be either duplex or triplex, depending on the number of liners. As evident from name, a duplex pump has two liners while a triplex has three.  For given liner lengths and diameters, rod diameter (only for duplex pump) and pump efficiency, DrillCalc computes output of a pump. Pump output is displayed in both barrel and gallons per stroke.    </p>
+    <h3>SPP vs SPM</h3>
+    <p>It is empirical method to compute relation between Stand Pipe Pressure (SPP) and Strokes per minute (SPM).  For a drop or rise in SPM, it computes the corresponding expected drop or rise of SPP.</p>
+    <h3>Pipe Displacement</h3>
+    <p>When a string is run in well, it displaces certain volume of fluid out of well bore. The amount of fluid displaced depends on whether the pipe is closed or open ended. Closed end implies fluid cannot enter inside string (imagine a cap screwed at bottom of string) when it is run in well bore. During such a run, fluid volume equivalent to string capacity + steel volume is displaced out of well bore. 
+      Open ended string implies fluid from well bore will fill inside string when it runs in hole. Therefore, during open end string run, only mud volume equivalent to string steel volume is displaced out of well bore.  For a given outer and inner diameter of string, DrillCalc computes mud volume displacement of closed and open end pipe per foot and for a given length. 
+      </p>
+      <h3>Pipe Capacity</h3>
+      <p>It is the total inside volume of string.  This web page computes pipe capacity per foot and for a given length of pipe.</p>
+      <h3>Pipe weight </h3>
+      <p>This tab computes pipe weight for a given length of pipe. </p>
+      <h3>Drill Collar weight</h3>
+      <p>It is an empirical method to compute regular and spiral drill collar weight.  Weight is computed in both kilo pounds and kg. </p>
+      <h3>Rectangular Tank Capacity in Barrels </h3>
+      <p>It computes fluid volume of partially and completely filled rectangular tank in barrels.  </p>
+      <h3>Cylindrical Tank Capacity in Barrels</h3>
+      <p>It computes fluid volume of partially and completely filled cylindrical tank.</p>
+      <h3>Tapered Cylindrical Tank Capacity in Barrels</h3>
+      <p>It computes fluid volume of partially and completely filled tapered cylindrical tank.</p>
+      <h3> Horizontal Cylindrical Tank Capacity in Barrels</h3>
+      <p>It computes fluid volume of partially and completely filled horizontal cylindrical tank. </p>
+      <h3>Lag Strokes and Time</h3>
+      <p>Lag stroke and time is frequently computed on rig site. Lag time is the time taken for the bottom fluid/rock cutting to reach surface at a given flow rate, well bore sections and drilling assembly. Lag strokes is the number of strokes needed to get bottom fluid/rock cutting to surface. 
+        Lag time calculations become complex depending on number of open holes and cased sections and different outer diameters of string assembly. Several set of annular volumes for different sections should be computed separately and aggregated to get values of lag stroke and time. 
+        Lag time and stroke can be easily computed from DrillCalc by giving input of outer diameter and length of all string sections and diameter and length of cased and open hole sections.      
+        </p>
+        <h2>2.Drilling Engineering</h2>
+        <p>It is the second tab of DrillCalc. It has nine menu items, each performing several basic computations.  It has computations for BHA length, Maximum string length, stuck pipe, critical RPM, PDC bit flow rate, Control drilling, surge and swab pressure and ton mile. </p>
+        <h3>BHA Length</h3>
+        <p>This computation is used by drilling engineers for BHA design purpose. It computes length of drill collar needed to produce desired weight on bit while drilling.</p>
+        <h3>Maximum String Length</h3>
+        <p>This computation derives the maximum possible length of drill pipe for a given BHA. It also computes maximum possible depth which can be drilled with a given BHA.</p>
+        <h3>Stuck Pipe</h3>
+        <p>When drill string is stuck in hole due to differential sticking, this formula computes length of free point i.e. length of free pipe. </p>
+        <h3>Critical RPM to avoid vibration</h3>
+        <p>For a given string, this formula computes a threshold RPM value while drilling, above which excessive vibrations may be obtained. </p>
+        <h3>Minimum Flow Rate for PDC bit</h3>
+        <p>For efficient drilling, this formula computes minimum allowable flow rate for a PDC bit. </p>
+        <h3>Control Drilling</h3>
+        <p>For a large diameter hole, this formula computes maximum allowable rate of penetration. </p>
+        <h3>Swab and Surge Pressure</h3>
+        <p>These formulas compute pressure drop and rise while pulling out and running in string into hole. 
+          While pulling string out of hole, a swab pressure may be obtained which leads to influx of formation fluid into well bore. During running in hole, a surge pressure may be obtained which pushes well bore fluid into the formation. Surge and swab pressure depends on tripping velocity. 
+          </p>
+          <h3>Ton mile</h3>
+          <p> It is indicator of total service obtained from drilling line. It is the total lift and movement functions performed by drilling line. Ton mile value is directly proportional to load weight and its distance of movement. </p>
+          <h2>3.Bit Analysis</h2>
+          <p>This page can store bit related inputs for nine bits. It computes useful information from these inputs which can be used as a comparison tool. The information generated can be broadly divided into </p>
+          <h4>I.	Bit Hydraulics</h4>
+          <h4>II.	Cost per foot </h4>
+          <h4>III.	Break Even Analysis</h4>
+          <p>Bit Hydraulics computes following results</p>
+          <h3>Total Flow Area (TFA)</h3>
+          <p>TFA is the total flow area across bit which depends on number and size of nozzles.</p>
+          <h3>Jet Velocity (change to Nozzle Velocity)</h3>
+          <p>It is the velocity of fluid passing through nozzle. Irrespective of number of nozzles, fluid velocity remains same in all nozzles. Nozzle velocity will decrease with increase in number of nozzles or their size. For most bits, nozzle velocity should remain 200 to 450 ft per second. </p>
+          <h3>Pressure Drop Across Bit</h3>
+          <p>When fluid passes through bit, certain pressure loss is observed due to friction at bit nozzles. 
+            DrillCalc computation is not appropriate for coring bits. 
+            </p>
+            <h3>Percent pressure Drop Across Bit</h3>
+            <p>It is the percentage of bit pressure drop to total circulating system pressure. For efficient drilling, percent pressure drop at bit should be in range of 50 to 65 percent. </p>
+            <h3>Hydraulic Impact Force </h3>
+            <p>It is the hydraulic impact force of the fluid on formation at bit.  </p>
+            <h3>System Hydraulic Horse Power (HHP) At Bit</h3>
+            <p>It is the horse power at the bit which is always less than total horse power.</p>
+            <h3>System HHP</h3>
+            <p>It is the total hydraulic horse power of the circulating system. </p>
+            <h3>Annular Velocity</h3>
+            <p>It is the velocity of fluid in open hole above the bit. </p>
+            <p>Cost per foot has following results</p>
+            <h3>Footage</h3>
+            <p>Footage is the total hole length (in foot) drilled by bit. Only formation drilling is considered for footage computation. </p>
+            <h3>Average ROP</h3>
+            <p>It is the obtained by dividing footage of a bit by total on bottom hours. </p>
+            <h3>Cost per foot</h3>
+            <p>It is the average drilling cost (in US Dollars) for a foot of formation. </p>
+            <h3>Break Even Analysis</h3>
+            <p>It computes the minimum Rate of Penetration expected from a bit run in lieu of an old bit. For remaining section to be drilled, the cost of new bit and bit round trip time should be compensated by time saved due fast ROP obtained with new bit. </p>
+            <h2>4. Drilling Fluids</h2>
+            <p>Drilling fluid mixing, dilution, weighting up, break circulation, solids analysis and centrifuge computations are done in this section.</p>
+            <h3>Mixing Fluids Volume and Density</h3>
+            <p>When two different density fluids are mixed, this computation derives the density of mixed fluid. 
+              Of course, the resultant volume will be sum of the volume of two mixing fluids.
+              It also computes volume of fluid of a known density needed to be mixed to another fluid of known density and volume to produce a desired density.    
+              </p>
+              <h3>Break Circulation</h3>
+              <p>When circulation is initiated, some threshold pressure is required to break the mud gel formed in string. This shows up on gauge as a pressure surge which dips once circulation is established.  This formula computes pressure required to overcome the mud gel strength inside drill string.</p>
+              <h3> Mud Weight Increase</h3>
+              <p>In rig operations, mud engineer is frequently required to raise the mud density. In oil field terminology, mud weight is used as synonymous to mud density. Certain high density additives are mixed in mud to increase its weight. Commonly used additives to raise mud weight are Calcium Carbonate (CaCO3), Barite (BaSO4) and Hematite (Fe2O3).</p>
+              <p>DrillCalc computations are handy for mud engineers to compute the number of standard sacks needed to raise weight of mud in mud pits. </p>
+              <p>It computes sacks of Barite, Carbonate and Hematite per 100 barrels of mud needed to get desired mud weight increase in pits.  It also computes volume increase per 100 barrels of mud, due to its mud weight increase by Barite, Carbonate and Hematite. </p>
+              <p>It also computes starting fluid volume of a given mud weight required to yield a predetermined final volume of desired mud weight with Barite, Carbonate and Hematite additions. </p>
+              <h3>Dilution</h3>
+              <p>Besides raising mud weight, mud engineer frequently reduces mud weight which is achieved through mixing low density fluids to mud system. Water is added to dilute water based mud  while diesel is added to dilute oil based mud.   </p>
+              <p>DrillCalc computes volume of water and diesel which should be mixed to reduce mud weight to a desired value.   </p>
+              <h3>Solids Analysis</h3>
+              <p>Solid analysis computations are done in this section. Average specific gravity of solids, Percent by volume of low gravity solids and pounds per barrel of barite is computed. Bentonite percent by volume and pounds per barrel is also computed. </p>
+              <p>Maximum recommended solids fraction and low gravity solids are also computed.  </p>
+              <h3>Centrifuge</h3>
+              <p>Centrifuge computations are available in DrillCalc  to compute centrifuge under flow mud flow rate, fraction of old mud in underflow, mass rate of clay, mass rate of additives and water flow rate into mixing pits. </p>
+              <h2>5. Hydraulics</h2>
+              <p>This page has twelve menu items, each performing several basic computations.  It has computations for Equivalent Circulating Density, Hydrostatic Pressure drop due to certain length of wet and dry string pulled out, required hole fill for a certain length of wet and dry string pulled out, feet of wet and dry pipe which can be pulled to lose hydrostatic pressure overbalance, overbalance lose due to fluid losses, slug volume calculation and rock cutting volume and weight.    
+                Hydraulics tab computes following results
+                </p>
+                <h3>ECD</h3>
+                <p>During circulation, some fluid pressure is lost in annulus called annular pressure loss.  
+                  Equivalent Circulating Density (ECD) is fluid density equivalent of sum of bottom hole hydrostatic pressure and annular pressure loss. When no circulation in well bore, fluid density is equal to ECD. 
+                  This computation calculates Annular Velocity , Annular Pressure Loss  and ECD from given inputs. 
+                  </p>
+                  <h3>Dry POOH</h3>
+                  <p>Dry string pull out of hole (POOH) implies high density slug has been pumped inside string prior to commence of pull out. Therefore, only the steel volume comes out of hole while pulling out string. High density slug displaces fluid down the string. 
+                    When drill string is dry pulled out of hole, fluid level in well goes down. Computation for hole fill, casing capacity and hydrostatic pressure drop due to dry pull out is given in this section. 
+                    </p>
+                    <h3>Wet POOH</h3>
+                    <p>In wet string pull out, high density slug is not pumped inside string prior to commencing pull out. Therefore both string and drilling fluid reaches surface during pull out, hence greater is the hydrostatic pressure drop. </p>
+                    <p>When drill string is wet pulled out of hole, fluid level in well goes down. Computation for pipe displacement, casing capacity and hydrostatic pressure drop due to wet pull out is given in this section. Barrels of fluid to be filled in hole due to wet pull out are also computed. </p>
+                    <h3>Overbalance Loss </h3>
+                    <p>For a given overbalanced hydrostatic pressure, this formula computes length of wet or dry drill string which can be pulled to lose over balance.    </p>
+                    <h3>Lost Returns</h3>
+                    <p>In case of mud losses due to high hydrostatic pressure, water is filled in annulus to decrease hydrostatic pressure. For a given barrel of water added to annulus, this formula computes length of water column in annulus (?), Bottom hole pressure lost, and Equivalent mud weight at bottom.</p>
+                    <h3>Slug Volume</h3>
+                    <p>For a given length of string to be pulled out dry, this formula computes the required barrels of slug of a given density.</p>
+                    <h3>Critical Annular Velocity </h3>
+                    <p>Critical Annular Velocity is the annular velocity at which fluid flow becomes turbulent.    For a given funnel viscosity, mud weight and hole diameter, critical annular velocity and  critical flow rates are computed in DrillCalc. </p>
+                    <h3>Desired Annular Velocity</h3>
+                    <p>This formula computes flow rate and stroke per minutes required for a desired annular velocity in a given well bore. </p>
+                    <h3>Cutting Slip Velocity</h3>
+                    <p>For a given density and diameter of cuttings, Cutting slip velocity is computed for a well bore with given mud properties and flow rate. </p>
+                    <h3>Spotting pill</h3>
+                    <p>LCM pills are spotted in well to control mud losses. These pills should be pumped and raised to certain height in open hole to cover loss zones. For a desired pill rise in hole and a given well section and string, this formula computes barrels of pill needed and barrels of fluid required to chase the pill. It also computes strokes required to pump and chase the pill to target zone.  </p>
+                    <h3>Cutting Volume</h3>
+                    <p>For a given hole diameter and footage drilled, this section computes the volume of rock cuttings produced. </p>
+                    <h3>Cutting Weight</h3>
+                    <p>For a given hole diameter and footage drilled, this section computes the weight of rock cuttings produced. </p>
+                    <h2>6. Pressure and Well Control</h2>
+                    <p>It is the fifth tab of DrillCalc. It has five menu items, each performing several basic computations related to well pressure control. It has computations for hydrostatic pressure and pressure gradient, Leak Off Test and Formation Integrity Test, Well control computations, Kick analyses and gas migration in shut in well. Pressure and well control computes following results</p>
+                    <h3>Hydrostatic Pressure and Pressure Gradient</h3>
+                    <p>Hydrostatic pressure (HP) is pressure of fluid column at any point of well bore. It depends on the true vertical depth (TVD) and fluid density. 
+                      Pressure gradient is the rate of change of hydrostatic pressure against TVD. 
+                      While HP increases with increase in TVD and mud density, pressure gradient depends only on mud density.  
+                      </p>
+                      <h3>Leak Off Test (LOT)</h3>
+                      <p>Leak off weight for a phase is maximum possible mud weight equivalent of a down hole formation pressure at which formation is ruptured. To conduct LOT, 3 to 5 feet of formation is drilled and cutting are circulated out. Annulus is closed and pressure is raised through pumps to check the formation strength. The Stand Pipe Pressure keeps rising till formation can bear the pressure. As soon as formation ruptures, pressure drop is observed. The maximum pressure obtained is used for LOT computation. </p>
+                      <h3>Formation Integrity Test (FIT)</h3>
+                      <p>FIT is the verification test to ensure if formation can hold a certain pressure equivalent of a mud weight, to be used while drilling a phase?  
+                        Procedure for FIT and LOT tests are same. Annular pressure is raised to a predetermined value and formation integrity is checked for the equivalent mud weight. 
+                        </p>
+                        <h3>Well Control, Kick Analysis and Gas Migration</h3>
+                        <p>Due to hydrostatic under balance, formation fluid may enter in well bore, leading to what in oil field terminology is called kick. A gain in mud returns and pit volume is observed as a consequence of kick. The process of circulating out formation fluid from well bore and replacing underbalanced mud with balanced mud is called well control. As soon as kick signatures are obtained, well is closed and pressure rise in annulus and drill pipe is noted to understand strength of kick. Pressure obtained in annulus is called shut in casing pressure (SICP) while the one in string is called shut in drill pipe pressure (SIDPP). A kick is analyzed with SICP and SIDPP. Formation pressure is computed from SIDPP obtained. Type of influx, whether oil or water or gas and its density is computed. Height of influx in well bore is computed from pit gain and annular capacity. Mud weight needed to kill the kick is also computed.  Once gas enters from formation into well bore, it migrates upwards due to its low density. Rate of upward migration of gas is computed in this section. Hydrostatic pressure decrease at bottom due to gas cut mud is also computed. Maximum surface pressure increase due to kick and maximum pit gain from gas kick is also computed. </p>
+                        <p>Well is shut to measure SICP when a kick is obtained. Maximum allowable SICP so that formation is not damaged is also computed. Maximum influx height and maximum formation pressure that can be controlled while shutting in well is also computed.     </p>
+                        <h2>7.	Tally, Sheets and Unit Conversion</h2>
+                        <h3>Pipe Tally and Casing Tally</h3>
+                        <p>Pipe tally and casing tally can be stored in this section. Pipe tally computes stand length from individual joint lengths. It also computes total string length form joint length and BHA. Pipe displacement is also computes. </p>
+                        <p>Casing tally stores data for casing shoe float joint, length of joints and total length of casing run. </p>
+                        <h3>Trip Sheet</h3>
+                        <p>Trip sheet is the tracking sheet for tripping drill string or tubular in well bore. It keeps tracks of mud hole fill while pulling out string from hole. While running string in hole, it keeps track of volume of mud displaced out of hole. Any anomalies in hole fill or mud displaced are looked into. </p>
+                        <h3>Unit Conversion Table</h3>
+                        <p>Since all DrillCalc units are API, unit conversions tables are given showing unit conversion factors for converting values from API to metric and SI. </p>
+                        <h3></h3>
+</body>
+</html>
